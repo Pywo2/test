@@ -1,0 +1,88 @@
+*{margin: 0; padding: 0; list-style: none; text-decoration: none;}
+
+body{ background-color: deepskyblue;}
+
+/*Header*/
+    .header{width: 100%; height: 80px; display: block; background-color: #101010; position: sticky; top: 0;
+        z-index: 999; min-width: 1110px;}
+
+    .inner_header{width: 1000px; height: 100%; display: block; margin: 0 auto; /*background-color: red;*/}
+
+    .logo_container{height: 100%; display: flex; float: left; align-content: center;}
+
+    .logo_container h1{color: white; display: flex; font-family:'Oswald'; align-items: center; font-size: 40px; 
+        font-weight: 200; background-color: #FF000000;}
+
+    .logo_container h1 span{font-weight: 800;}
+
+    .navigation{float: right; height: 100%;}
+
+    .navigation a{height: 100%; display: table; float: left; padding: 0px 20px; min-width: 100px;}
+
+    .navigation a:last-child{padding-right: 0;}
+
+    .navigation a li{ display: table-cell; vertical-align: middle ; height: 100%; color: white; font-family: 'Oswald'; 
+        font-size: 22px;}
+
+/*Bottom_Liner*/
+    .Bottom_Liner{width: 100%; height: 250px; display: flex; background-color: #808080;
+        bottom: 0; min-width: 1110px;}
+
+    .inner_Bottom_Liner{width: 90%; height: 100%; display: block; margin: 0 auto; min-width: 1100px; max-width: 1200px; 
+        justify-content: center;}
+
+
+/*Dropdown Menüs*/
+    /*Dropdown Menü*/
+        .droptbtn{background-color: #10101000; color: white; font-size: 22px; border: none; vertical-align: middle;
+            font-family: 'Oswald'; height: 100%;}
+
+    /*Div zum Positioniern von dropdown content*/
+        .dropdown{display: inline-block; position: relative;}
+    
+    /*Dropdown content verstecken*/
+        .dropdown-content{display: none; position: absolute; background-color: #101010; min-width: 160px; 
+            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2); z-index: 1; font-family: 'Oswald'; font-size: 22px;top: 19%;}
+    
+    /*Links im Dropdown*/
+        .dropdown-content a{color: white; padding: 12px 16px; text-decoration: none; display: block; width: 160px;}
+    
+    /*Farbänderung der Links bei Hover*/
+        .dropdown-content a:hover{background-color: #202020;}
+    
+    /*Menü aufdecken bei Hover*/
+        .dropdown:hover .dropdown-content{display: block;}
+    
+    /*Hintergrundfarbe vom Button ändern wenn Menü ausgeklappt
+        .dropdown:hover .droptbtn{background-color: #202020;}*/
+
+
+.content{width: 80%; height: auto; display: flex; background-color: #fcfce3; margin: 0 auto; /*flex-wrap: wrap;*/
+        padding-bottom: 30px; z-index: 998; min-height: 70vh; display: flex; flex-direction: column;}
+.ueberschrift{width: 100%; height: 120px; display: flex; background-color: #808080; margin: 0 auto;
+        position: relative; justify-content: center; align-items: center; margin-top: 20px;}
+.ueberschrift h1{color: white; font-family: 'Oswald'; font-weight: 600; font-size: 39px;}
+
+/*Bild links Text Rechts*/
+    .P_L_T_R{background-color: #00FF0000; width: 100%-10px; height: auto; margin-top: 40px; display: flex;
+        flex-direction: row; justify-content: center; border-style: ridge; border-width: 10px;}
+        .Pic_Box{width: auto; background-color: #FF000000;}
+        .Text{width: 47%; font-family: 'Oswald'; justify-items: left; background-color: #FF000000; 
+            align-content: center; padding-left: 1.5%; padding-right: 1.5%}
+        .P_L_T_R_centering{width: auto; background-color: #FF000000; display: flex; flex-direction: row; 
+            /*border-style: ridge; border-width: 10px;*/}
+
+/*Bild Links und Rechts Text Mitte*/
+    .P_LR_T_M {background-color: #FF000000; width: 100%-10px; height: auto; margin-top: 40px; display: flex;
+        flex-direction: row; border: ridge; border-width: 10px;}
+        .Pic_L{width: 23.5%;}
+        .Pic_R{width: 23.5%;}
+        .Text_M{width: 50%; font-family: 'Oswald'; justify-items: center; align-content: center; padding-left: 1.5%; 
+            padding-right: 1.5%;}
+
+/*Absätze*/
+    .Ueberschrift_Abschnitt{font-size: 25pt; font-weight: 500; text-align: left;}
+    .Text_Abschnitt{font-size: 15pt; width: 90%; padding-left: 10%;}
+
+/*Logo*/
+    .Logo{height: 80px;}
